@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html>
+<head>
+
+<script>
+    async function postData(){
+     let data =   {
+    "name": "YesusubhashrosyYesu",
+    "job": "leader",
+    "id": "255"
+}
+    
+   let response= await fetch("https://reqres.in/api/users",{"method": "POST","body":JSON.stringify(data)}) 
+//    let response= await fetch("https://reqres.in/api/users",{"method": "POST","body":data}) use stringify to convert from json to js to get o/p properly in the payload
+ let jsonData= await response.json();// to extract the json dat from server
+  console.log(jsonData);
+  document.getElementById('response').innerHTML =JSON.stringify(jsonData);
+    }
+
+</script>
+
+<!-- need three things url,methods, data to send   -->
+
+</head>
+<body>
+
+<button onclick="postData()"> post the server data </button>
+<p id=" response"> hello</p>
+
+</body>
+
+
+ </html>

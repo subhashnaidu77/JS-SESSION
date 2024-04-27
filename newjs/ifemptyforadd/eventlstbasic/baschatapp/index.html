@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<title>event listner basic</title>
+    </head>
+    <style>
+        .message{margin-left: 330px;
+            height: 200px;
+            width: 50%;
+            border: 1px solid;
+
+        }
+        #msg_input{
+            height: 150px;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        // var messagechat =[];
+    
+        function chat(){
+           let inputmessage= document.getElementById('msg_input').value; 
+        //    messagechat.push(inputmessage);
+        //    console.log(messagechat);
+        if(inputmessage=''){
+            return; //stop the execution.
+        }
+           let p_tag= document.createElement('p');
+           p_tag.innerHTML = inputmessage;
+           document.getElementById('msg_out').appendChild(p_tag); //adding our child to the msg_out
+            document.getElementById('msg_input').value=''; // to disapper the message in second box or assigning to clear the box 
+        
+        }
+    </script>
+<body>
+<div style="text-align: center;">
+    <div id="msg_out" class="message">
+
+
+
+    </div>
+    <div class="enter">
+
+
+        <textarea name="" id="msg_input" cols="30" rows="10" placeholder="enter message "></textarea>
+    
+    </div>
+    <button id="btn">
+click here
+    </button>
+
+</div>
+</body>
+<script> document.getElementById("btn").addEventListener('click',()=>
+{
+    chat();
+})</script>
+</html>
+<!-- notes
+let : it is a block (scope) level variable    -->
+ 

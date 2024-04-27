@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            function Click(){
+                 alert("Hello observe the changes carefully");
+                document.getElementById("my").innerHTML = "here it is";
+            }
+            function imageclick(w){
+                let com;   
+                com="happy.gif"
+                document.getElementById("when").src = com; 
+                
+                // else{
+                //     alert("Hello absorve the changes carefully");
+                //     com ="done.gif"
+                // } 
+                // document.getElementById("when").src = com;
+            
+            }
+                function imageonce(ws){
+                 {let con;
+                    
+                    con="done.gif"
+                    document.getElementById("my").innerHTML = "hello second image";
+                    // con="happy.gif"
+                    document.getElementById("when").src = con;
+
+                }
+            }
+            
+           </script>
+    </head>
+    <title> Basic js</title>
+<body style="text-align: center;">
+    <div>
+    <div>
+   <h1 style="color: blueviolet;" >Hello let's check the changes</h1>
+</div style="text-align:center">
+   <p id="my" style="background:5px 2px yellowgreen; text-shadow: 5px 5px 5px;">here</p>
+   <img id="when" src="clickhere.gif" style="width: 30%;" alt="">
+   <div>
+   <button onclick="Click(),imageclick()"> click</button>
+   <button onclick="imageonce()"> click2</button>
+</div>
+   
+</div>
+</body>
+</html>

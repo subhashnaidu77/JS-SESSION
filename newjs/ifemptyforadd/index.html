@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifloop
+    </title>
+<script>
+function add(){
+    let num1=document.getElementById("num1").value;
+    let num2=document.getElementById("num2").value;
+
+    if(num1==''){
+        document.getElementById("h1_id").innerHTML = "num1 should not be empty";
+
+    }else if(num2==''){
+        document.getElementById("h1_id").innerHTML = "num2 should not be empty";
+    }else{
+        num1=document.getElementById("num1").value;
+            num2=document.getElementById("num2").value; 
+            let res=parseInt(num1)+ parseInt(num2);
+            let ressub = parseInt(num1)- parseInt(num2);
+            let resmul = parseInt(num1) * parseInt(num2);
+            let resdiv1 = parseInt(num1) / parseInt(num2);
+            let resdiv2 = parseInt(num1) % parseInt(num2);
+            document.getElementById("h1_id").innerHTML=res;
+            document.getElementById("h1_id_2").innerHTML= ressub;
+            document.getElementById("h1_id_3").innerHTML=resmul;
+            document.getElementById("h1_id_4").innerHTML=resdiv1;
+            document.getElementById("h1_id_5").innerHTML=resdiv2;
+    }
+
+
+}
+</script>
+</head>
+
+<body>
+  
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="add()"> click</button>
+    <h1 id="h1_id">result</h1>
+    <h1 id="h1_id_2">result</h1>
+    <h1 id="h1_id_3">result</h1>
+    <h1 id="h1_id_4">result</h1>
+    <h1 id="h1_id_5">result</h1>
+</body>
+
+
+</html>

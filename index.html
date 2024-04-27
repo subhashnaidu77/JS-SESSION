@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function bulb(w){
+                let click;
+                if(w==0){
+                    click = "off.jpg"
+
+                }
+                else{
+                    click= "on.jpg"
+                }
+                document.getElementById("mine").src = click;
+            }
+        
+        </script>
+<title>sample java script</title>
+    </head>
+<body>
+    <div style="text-align:center;">
+   <h2 style=" text-shadow: 20px 10px 20px yellowgreen; text-decoration-line: underline;"> 
+    Hello Click here to test the image button </h2>
+    <img id="mine" src="off.jpg" alt="image" style="width: 250px; padding-top: 20px;">
+    <div>
+        <button onclick="bulb(0)">Off</button>
+        <button onclick="bulb(1)">On</button>
+    </div>
+   
+</div>
+</body>
+</html>

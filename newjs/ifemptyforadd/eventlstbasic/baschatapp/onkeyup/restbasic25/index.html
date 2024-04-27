@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html>
+<head>
+
+<script>
+    async function getData(){
+
+    
+   let response= await fetch("https://reqres.in/api/users?page=2",{method: "GET"}) 
+ let jsonData= await response.json();// to extract the json dat from server
+  console.log(jsonData);
+    }
+
+</script>
+
+<!-- need three things url,methods, data to send   -->
+
+</head>
+<body>
+
+<button onclick="getData()"> get the server data </button>
+
+
+</body>
+
+
+ </html>

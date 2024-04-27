@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function bulb(){
+               let val;
+               val = document.getElementById('ten').value;
+               console.log(val);
+               document.getElementById('one').innerHTML =val;
+
+            }
+        
+        </script>
+<title>event listner basic</title>
+    </head>
+<body>
+   <h1 id="one">
+    hello
+   </h1>
+   <input type="text" id="ten">
+   <button id="bun">click here</button>
+   <script>
+    document.getElementById('bun').addEventListener('click',()=>{ 
+       bulb(); 
+    })
+   </script>
+</div>
+</body>
+</html>
+<!-- doubt - 
+    1. why we use click at listner why not with other --- cleared.
+    2. can we write input id as inner html as i wrote but   -->
